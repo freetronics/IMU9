@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1284,10 +1284,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 </class>
 </classes>
 <parts>
-<part name="VCC" library="freetronics-master-v1.1" deviceset="M01" device="PTH"/>
-<part name="GND" library="freetronics-master-v1.1" deviceset="M01" device="PTH"/>
-<part name="SCL" library="freetronics-master-v1.1" deviceset="M01" device="PTH"/>
-<part name="SDA" library="freetronics-master-v1.1" deviceset="M01" device="PTH"/>
+<part name="H4" library="freetronics-master-v1.1" deviceset="M01" device="PTH" value="VCC"/>
+<part name="H1" library="freetronics-master-v1.1" deviceset="M01" device="PTH" value="GND"/>
+<part name="H3" library="freetronics-master-v1.1" deviceset="M01" device="PTH" value="SCL"/>
+<part name="H2" library="freetronics-master-v1.1" deviceset="M01" device="PTH" value="SDA"/>
 <part name="GND1" library="freetronics-original" deviceset="GND" device=""/>
 <part name="C1" library="freetronics-master-v1" deviceset="CAP" device="0603" value="1uF"/>
 <part name="IC1" library="freetronics-master-v1" deviceset="V_REG_78XX" device="SOT23-3" value="MCP1700T-3302E/TT"/>
@@ -1299,18 +1299,18 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <part name="Q2" library="freetronics-jon" deviceset="MOSFET-N" device="SOT-323" value="RJU003N03 N-MOSFET"/>
 <part name="R3" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="10K 0402"/>
 <part name="R4" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="10K 0402"/>
-<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="10K 0402"/>
-<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="10K 0402"/>
+<part name="R2" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="4K7 0402"/>
+<part name="R1" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="4K7 0402"/>
 <part name="SJ1" library="freetronics-master-v1.1" deviceset="SJ2W" device=""/>
 <part name="GND2" library="freetronics-original" deviceset="GND" device=""/>
-<part name="U$1" library="freetronics-original" deviceset="MPU-9150" device=""/>
+<part name="IC2" library="freetronics-original" deviceset="MPU-9150" device=""/>
 <part name="C3" library="freetronics-master-v1" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="C4" library="freetronics-master-v1" deviceset="CAP" device="0603" value="10nF"/>
 <part name="C5" library="freetronics-master-v1" deviceset="CAP" device="0603" value="2.2nF"/>
 <part name="C6" library="freetronics-master-v1" deviceset="CAP" device="0603" value="0.1uF"/>
 <part name="GND4" library="freetronics-original" deviceset="GND" device=""/>
 <part name="GND5" library="freetronics-original" deviceset="GND" device=""/>
-<part name="INT" library="freetronics-master-v1.1" deviceset="M01" device="PTH"/>
+<part name="H5" library="freetronics-master-v1.1" deviceset="M01" device="PTH" value="INT"/>
 <part name="GND8" library="freetronics-original" deviceset="GND" device=""/>
 <part name="R5" library="freetronics-jon" deviceset="RESISTOR" device="0402" value="22K 0402"/>
 <part name="SJ2" library="freetronics-master-v1.1" deviceset="SJ" device=""/>
@@ -1318,32 +1318,48 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <sheets>
 <sheet>
 <plain>
-<text x="149.86" y="12.7" size="2.54" layer="94">Freetronics IMU9</text>
-<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (2013-12-20)</text>
+<text x="149.86" y="12.7" size="2.54" layer="94">Freetronics IMU9 9-DOF Sensor</text>
+<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (2014-01-21)</text>
 <text x="149.606" y="6.858" size="1.651" layer="94">www.freetronics.com/imu9</text>
-<text x="195.58" y="6.858" size="1.778" layer="94">IMU9</text>
-<text x="119.38" y="139.7" size="1.778" layer="97">Supply Voltage Range: 1.5-3.6V</text>
+<text x="193.04" y="6.858" size="1.778" layer="94">SKU: IMU9</text>
+<text x="119.38" y="139.7" size="1.778" layer="97">Supply Voltage Range: 2.4-3.64V</text>
 <frame x1="0" y1="0" x2="248.92" y2="185.42" columns="8" rows="5" layer="94"/>
 <frame x1="147.32" y1="5.08" x2="243.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="190.5" y1="5.08" x2="213.36" y2="10.16" columns="8" rows="5" layer="94"/>
 <frame x1="213.36" y1="5.08" x2="243.84" y2="10.16" columns="8" rows="5" layer="94"/>
-<text x="25.4" y="88.9" size="1.778" layer="97">Bridge across solder jumpers 
-to enable I2C pull-ups</text>
+<text x="25.4" y="88.9" size="1.778" layer="97">Bridge across solder jumpers
+SJ1 to enable I2C pull-ups</text>
 <text x="76.2" y="93.218" size="1.778" layer="97">Vdrop 0.18V typ, 0.35V max</text>
-<text x="243.84" y="119.38" size="1.778" layer="97" rot="R180">Jumper: Adress LSB</text>
+<text x="205.74" y="137.16" size="1.778" layer="97">Jumper SJ2: Address LSB</text>
+<text x="149.86" y="20.32" size="1.778" layer="94">Copyright 2014 Freetronics Pty Ltd
+Designed by Adelmo Eloy
+Released under the TAPR Open Hardware License
+www.tapr.org/OHL</text>
+<text x="15.24" y="162.56" size="1.778" layer="94">InvenSense MPU-9150:
+* 3-axis gyroscope
+* 3-axis accelerometer
+* 3-axis compass</text>
+<text x="12.7" y="7.62" size="1.778" layer="94">Module operating voltage: 2.75 - 6Vdc (&lt;0.35V loss in LDO, 2.4V min for MPU-9150)
+I2C address: 0x68 (AD0 jumper open) / 0x69 (AD0 jumper closed)
+I2C pull-ups disabled by default. Bridge solder jumpers to enable.
+5V-safe I2C buffers.</text>
 </plain>
 <instances>
-<instance part="VCC" gate="G$1" x="25.4" y="111.76" smashed="yes">
-<attribute name="NAME" x="20.32" y="113.538" size="1.778" layer="95" rot="R180"/>
+<instance part="H4" gate="G$1" x="25.4" y="111.76" smashed="yes">
+<attribute name="VALUE" x="15.24" y="111.76" size="1.778" layer="96"/>
+<attribute name="NAME" x="22.86" y="115.062" size="1.778" layer="95"/>
 </instance>
-<instance part="GND" gate="G$1" x="25.4" y="33.02" smashed="yes">
-<attribute name="NAME" x="20.32" y="34.798" size="1.778" layer="95" rot="R180"/>
+<instance part="H1" gate="G$1" x="25.4" y="33.02" smashed="yes">
+<attribute name="VALUE" x="15.24" y="33.02" size="1.778" layer="96"/>
+<attribute name="NAME" x="22.86" y="36.322" size="1.778" layer="95"/>
 </instance>
-<instance part="SCL" gate="G$1" x="25.4" y="66.04" smashed="yes">
-<attribute name="NAME" x="20.32" y="67.818" size="1.778" layer="95" rot="R180"/>
+<instance part="H3" gate="G$1" x="25.4" y="66.04" smashed="yes">
+<attribute name="VALUE" x="15.24" y="66.04" size="1.778" layer="96"/>
+<attribute name="NAME" x="22.86" y="69.342" size="1.778" layer="95"/>
 </instance>
-<instance part="SDA" gate="G$1" x="25.4" y="50.8" smashed="yes">
-<attribute name="NAME" x="20.32" y="52.578" size="1.778" layer="95" rot="R180"/>
+<instance part="H2" gate="G$1" x="25.4" y="50.8" smashed="yes">
+<attribute name="VALUE" x="15.24" y="50.8" size="1.778" layer="96"/>
+<attribute name="NAME" x="22.86" y="54.102" size="1.778" layer="95"/>
 </instance>
 <instance part="GND1" gate="1" x="48.26" y="30.48"/>
 <instance part="C1" gate="G$1" x="66.04" y="104.14"/>
@@ -1384,15 +1400,16 @@ to enable I2C pull-ups</text>
 <attribute name="VALUE" x="43.815" y="81.28" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND2" gate="1" x="139.7" y="88.9"/>
-<instance part="U$1" gate="G$1" x="170.18" y="109.22" rot="R180"/>
+<instance part="IC2" gate="G$1" x="170.18" y="109.22" rot="R180"/>
 <instance part="C3" gate="G$1" x="121.92" y="104.14"/>
 <instance part="C4" gate="G$1" x="132.08" y="104.14"/>
 <instance part="C5" gate="G$1" x="165.1" y="83.82"/>
 <instance part="C6" gate="G$1" x="170.18" y="139.7"/>
 <instance part="GND4" gate="1" x="165.1" y="76.2"/>
 <instance part="GND5" gate="1" x="185.42" y="139.7"/>
-<instance part="INT" gate="G$1" x="25.4" y="127" smashed="yes">
-<attribute name="NAME" x="20.32" y="128.778" size="1.778" layer="95" rot="R180"/>
+<instance part="H5" gate="G$1" x="25.4" y="127" smashed="yes">
+<attribute name="VALUE" x="15.24" y="127" size="1.778" layer="96"/>
+<attribute name="NAME" x="22.86" y="130.302" size="1.778" layer="95"/>
 </instance>
 <instance part="GND8" gate="1" x="213.36" y="99.06"/>
 <instance part="R5" gate="G$1" x="213.36" y="111.76" smashed="yes" rot="MR90">
@@ -1407,7 +1424,7 @@ to enable I2C pull-ups</text>
 <net name="GND" class="0">
 <segment>
 <pinref part="GND1" gate="1" pin="GND"/>
-<pinref part="GND" gate="G$1" pin="1"/>
+<pinref part="H1" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="33.02" x2="33.02" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -1432,9 +1449,9 @@ to enable I2C pull-ups</text>
 <wire x1="139.7" y1="104.14" x2="139.7" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="152.4" y1="109.22" x2="139.7" y2="109.22" width="0.1524" layer="91"/>
 <junction x="139.7" y="106.68"/>
-<pinref part="U$1" gate="G$1" pin="GND1"/>
-<pinref part="U$1" gate="G$1" pin="GND2"/>
-<pinref part="U$1" gate="G$1" pin="GND3"/>
+<pinref part="IC2" gate="G$1" pin="GND1"/>
+<pinref part="IC2" gate="G$1" pin="GND2"/>
+<pinref part="IC2" gate="G$1" pin="GND3"/>
 <junction x="139.7" y="104.14"/>
 <pinref part="C4" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="101.6" x2="132.08" y2="96.52" width="0.1524" layer="91"/>
@@ -1457,13 +1474,13 @@ to enable I2C pull-ups</text>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="170.18" y1="147.32" x2="185.42" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="147.32" x2="185.42" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="FSYNC"/>
+<pinref part="IC2" gate="G$1" pin="FSYNC"/>
 <wire x1="167.64" y1="127" x2="167.64" y2="147.32" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="147.32" x2="170.18" y2="147.32" width="0.1524" layer="91"/>
 <junction x="170.18" y="147.32"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="CLKIN"/>
+<pinref part="IC2" gate="G$1" pin="CLKIN"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="187.96" y1="104.14" x2="213.36" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="1"/>
@@ -1480,7 +1497,7 @@ to enable I2C pull-ups</text>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="93.98" y1="53.34" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
 <junction x="93.98" y="50.8"/>
-<pinref part="U$1" gate="G$1" pin="SDA"/>
+<pinref part="IC2" gate="G$1" pin="SDA"/>
 <wire x1="175.26" y1="50.8" x2="175.26" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1492,7 +1509,7 @@ to enable I2C pull-ups</text>
 <junction x="66.04" y="111.76"/>
 <pinref part="IC1" gate="G$1" pin="IN"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="VCC" gate="G$1" pin="1"/>
+<pinref part="H4" gate="G$1" pin="1"/>
 <pinref part="SJ1" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="111.76" x2="66.04" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="88.9" x2="45.72" y2="111.76" width="0.1524" layer="91"/>
@@ -1504,7 +1521,7 @@ to enable I2C pull-ups</text>
 <pinref part="Q2" gate="G$1" pin="D"/>
 <wire x1="78.74" y1="50.8" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
 <label x="134.62" y="50.8" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SDA" gate="G$1" pin="1"/>
+<pinref part="H2" gate="G$1" pin="1"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="50.8" x2="33.02" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="50.8" y1="68.58" x2="50.8" y2="50.8" width="0.1524" layer="91"/>
@@ -1515,7 +1532,7 @@ to enable I2C pull-ups</text>
 <segment>
 <pinref part="Q1" gate="G$1" pin="D"/>
 <label x="134.62" y="66.04" size="1.778" layer="95" rot="MR0"/>
-<pinref part="SCL" gate="G$1" pin="1"/>
+<pinref part="H3" gate="G$1" pin="1"/>
 <wire x1="33.02" y1="66.04" x2="40.64" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
 <wire x1="40.64" y1="66.04" x2="58.42" y2="66.04" width="0.1524" layer="91"/>
@@ -1547,16 +1564,16 @@ to enable I2C pull-ups</text>
 <junction x="106.68" y="111.76"/>
 <wire x1="93.98" y1="78.74" x2="114.3" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="78.74" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<label x="119.38" y="111.76" size="1.778" layer="95"/>
-<pinref part="U$1" gate="G$1" pin="VLOGIC"/>
+<label x="137.16" y="111.76" size="1.778" layer="95"/>
+<pinref part="IC2" gate="G$1" pin="VLOGIC"/>
 <wire x1="175.26" y1="127" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="175.26" y1="134.62" x2="114.3" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="134.62" x2="114.3" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="IC2" gate="G$1" pin="VDD"/>
 <wire x1="187.96" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="106.68" x2="190.5" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="134.62" x2="175.26" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="VDD2"/>
+<pinref part="IC2" gate="G$1" pin="VDD2"/>
 <wire x1="152.4" y1="111.76" x2="132.08" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="C4" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="111.76" x2="121.92" y2="111.76" width="0.1524" layer="91"/>
@@ -1572,6 +1589,7 @@ to enable I2C pull-ups</text>
 <wire x1="190.5" y1="134.62" x2="213.36" y2="134.62" width="0.1524" layer="91"/>
 <wire x1="213.36" y1="134.62" x2="213.36" y2="132.08" width="0.1524" layer="91"/>
 <junction x="190.5" y="134.62"/>
+<label x="137.16" y="134.62" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -1581,7 +1599,7 @@ to enable I2C pull-ups</text>
 <wire x1="68.58" y1="66.04" x2="73.66" y2="66.04" width="0.1524" layer="91"/>
 <junction x="73.66" y="66.04"/>
 <wire x1="73.66" y1="66.04" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="SCL"/>
+<pinref part="IC2" gate="G$1" pin="SCL"/>
 <wire x1="172.72" y1="66.04" x2="172.72" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -1602,28 +1620,28 @@ to enable I2C pull-ups</text>
 <net name="N$2" class="0">
 <segment>
 <pinref part="C5" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="CPOUT"/>
+<pinref part="IC2" gate="G$1" pin="CPOUT"/>
 <wire x1="165.1" y1="88.9" x2="170.18" y2="88.9" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="88.9" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="REGOUT"/>
+<pinref part="IC2" gate="G$1" pin="REGOUT"/>
 <pinref part="C6" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="127" x2="170.18" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="INT" gate="G$1" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="INT"/>
+<pinref part="H5" gate="G$1" pin="1"/>
+<pinref part="IC2" gate="G$1" pin="INT"/>
 <wire x1="33.02" y1="127" x2="165.1" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="AD0"/>
+<pinref part="IC2" gate="G$1" pin="AD0"/>
 <wire x1="172.72" y1="127" x2="172.72" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="129.54" x2="195.58" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="195.58" y1="129.54" x2="195.58" y2="119.38" width="0.1524" layer="91"/>
@@ -1638,6 +1656,10 @@ to enable I2C pull-ups</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="115,1,46.0486,87.1432,SJ1,,,,,"/>
+<approved hash="115,1,211.844,127,SJ2,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>

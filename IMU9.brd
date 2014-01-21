@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -15,7 +15,7 @@
 <layer number="19" name="Unrouted" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="14" fill="1" visible="no" active="yes"/>
+<layer number="22" name="bPlace" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
@@ -23,8 +23,8 @@
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
-<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -32,8 +32,8 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
@@ -45,7 +45,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="no" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -141,7 +141,7 @@
 <wire x1="20.32" y1="10.668" x2="18.542" y2="12.7" width="0" layer="20" curve="89.994361"/>
 <wire x1="20.32" y1="1.778" x2="20.32" y2="10.668" width="0" layer="20"/>
 <text x="5.3848" y="3.2512" size="0.8128" layer="21" font="vector" ratio="15">GND</text>
-<text x="0.9144" y="11.303" size="0.6096" layer="22" font="vector" ratio="20" rot="MR270">(c) 2013 Freetronics</text>
+<text x="0.9144" y="11.303" size="0.6096" layer="22" font="vector" ratio="20" rot="MR270">(c) 2014 Freetronics</text>
 <wire x1="5.08" y1="1.143" x2="5.08" y2="2.413" width="0.2032" layer="22"/>
 <wire x1="5.08" y1="2.413" x2="5.715" y2="3.048" width="0.2032" layer="22"/>
 <wire x1="6.985" y1="0.508" x2="5.715" y2="0.508" width="0.2032" layer="22"/>
@@ -183,8 +183,8 @@
 <text x="16.0274" y="8.6868" size="0.8128" layer="22" ratio="15" rot="MR0">GYROSCOPE
 MAGNETOMTR
 ACCELEROMETER</text>
-<text x="19.812" y="2.032" size="0.9144" layer="22" ratio="15" rot="MR0">2.3-6V</text>
-<text x="15.7988" y="2.54" size="1.27" layer="21" font="vector" ratio="15">IMU9</text>
+<text x="20.066" y="2.286" size="0.9144" layer="22" ratio="15" rot="MR0">2.75-6V</text>
+<text x="15.2908" y="2.286" size="1.524" layer="21" font="vector" ratio="15">IMU9</text>
 <circle x="9.525" y="9.017" radius="0.254" width="0.254" layer="21"/>
 <text x="16.002" y="1.778" size="1.016" layer="22" ratio="15" rot="MR180">v1.0</text>
 <text x="0.762" y="7.5946" size="0.8128" layer="21" ratio="15">AD0</text>
@@ -201,6 +201,7 @@ ACCELEROMETER</text>
 <text x="4.7752" y="10.2616" size="0.8128" layer="22" font="vector" ratio="15" rot="MR90">INT</text>
 <text x="1.016" y="0.7366" size="0.8128" layer="21" ratio="15">0x68/
 0x69</text>
+<circle x="9.906" y="8.89" radius="0.254" width="0.4064" layer="51"/>
 </plain>
 <libraries>
 <library name="freetronics-master-v1.1">
@@ -556,32 +557,28 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="VCC" library="freetronics-master-v1.1" package="1X01" value="M01PTH" x="13.97" y="1.778" smashed="yes" rot="R270">
-<attribute name="NAME" x="13.1318" y="0.0508" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="10.795" y="3.048" size="1.27" layer="27" rot="R270"/>
+<element name="H4" library="freetronics-master-v1.1" package="1X01" value="VCC" x="13.97" y="1.778" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.3858" y="0.0508" size="0.8128" layer="25"/>
 </element>
-<element name="GND" library="freetronics-master-v1.1" package="1X01" value="M01PTH" x="6.35" y="1.778" smashed="yes" rot="R270">
-<attribute name="NAME" x="5.2578" y="0.0508" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="3.175" y="3.048" size="1.27" layer="27" rot="R270"/>
+<element name="H1" library="freetronics-master-v1.1" package="1X01" value="GND" x="6.35" y="1.778" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.7658" y="0.0508" size="0.8128" layer="25"/>
 </element>
-<element name="SCL" library="freetronics-master-v1.1" package="1X01" value="M01PTH" x="11.43" y="1.778" smashed="yes" rot="R270">
-<attribute name="NAME" x="10.5918" y="0.0508" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="8.255" y="3.048" size="1.27" layer="27" rot="R270"/>
+<element name="H3" library="freetronics-master-v1.1" package="1X01" value="SCL" x="11.43" y="1.778" smashed="yes" rot="R270">
+<attribute name="NAME" x="10.8458" y="0.0508" size="0.8128" layer="25"/>
 </element>
-<element name="SDA" library="freetronics-master-v1.1" package="1X01" value="M01PTH" x="8.89" y="1.778" smashed="yes" rot="R270">
-<attribute name="NAME" x="7.7978" y="0.0508" size="0.8128" layer="25"/>
-<attribute name="VALUE" x="5.715" y="3.048" size="1.27" layer="27" rot="R270"/>
+<element name="H2" library="freetronics-master-v1.1" package="1X01" value="SDA" x="8.89" y="1.778" smashed="yes" rot="R270">
+<attribute name="NAME" x="8.3058" y="0.0508" size="0.8128" layer="25"/>
 </element>
 <element name="C1" library="freetronics-master-v1" package="0603" value="1uF" x="18.034" y="1.524" smashed="yes">
-<attribute name="NAME" x="17.399" y="0.254" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="17.399" y="2.032" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="17.018" y="0.5588" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="IC1" library="freetronics-master-v1" package="SOT23-3" value="MCP1700T-3302E/TT" x="18.542" y="6.096" smashed="yes" rot="R180">
-<attribute name="NAME" x="19.6215" y="5.334" size="0.8128" layer="25" rot="R180"/>
+<attribute name="NAME" x="17.7165" y="5.588" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="19.558" y="6.2865" size="0.4064" layer="27" rot="R180"/>
 </element>
 <element name="C2" library="freetronics-master-v1" package="0603" value="1uF" x="13.208" y="5.334" smashed="yes" rot="R270">
-<attribute name="NAME" x="12.573" y="3.81" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="12.319" y="3.302" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="12.2428" y="6.35" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="Q1" library="freetronics-jon" package="SOT32-3" value="RJU003N03 N-MOSFET" x="14.986" y="10.16" smashed="yes" rot="R180">
@@ -593,55 +590,54 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="12.23" y="10.3505" size="0.3048" layer="27" rot="R180"/>
 </element>
 <element name="R3" library="freetronics-jon" package="0402" value="10K 0402" x="14.986" y="11.938" smashed="yes">
-<attribute name="NAME" x="14.351" y="12.192" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="12.827" y="11.684" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="13.97" y="10.9728" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="R4" library="freetronics-jon" package="0402" value="10K 0402" x="11.43" y="11.938" smashed="yes">
-<attribute name="NAME" x="10.795" y="12.192" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="9.271" y="11.684" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="10.414" y="10.9728" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="R2" library="freetronics-jon" package="0402" value="10K 0402" x="11.43" y="8.382" smashed="yes">
-<attribute name="NAME" x="10.795" y="7.366" size="0.8128" layer="25" font="vector"/>
+<element name="R2" library="freetronics-jon" package="0402" value="4K7 0402" x="11.43" y="8.382" smashed="yes">
+<attribute name="NAME" x="10.795" y="7.112" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="10.414" y="7.4168" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="R1" library="freetronics-jon" package="0402" value="10K 0402" x="14.986" y="8.382" smashed="yes" rot="R180">
-<attribute name="NAME" x="15.875" y="8.128" size="0.8128" layer="25" font="vector" rot="R180"/>
+<element name="R1" library="freetronics-jon" package="0402" value="4K7 0402" x="14.986" y="8.382" smashed="yes" rot="R180">
+<attribute name="NAME" x="14.351" y="7.112" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="16.002" y="9.3472" size="0.4064" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="SJ1" library="freetronics-master-v1.1" package="SJ_2" value="" x="19.05" y="5.842" smashed="yes" rot="MR90">
 <attribute name="NAME" x="19.939" y="7.62" size="0.8128" layer="26" ratio="10" rot="MR0"/>
 <attribute name="VALUE" x="19.05" y="5.7419" size="0.02" layer="28" rot="MR90"/>
 </element>
-<element name="U$1" library="freetronics-original" package="QFN-24MPU" value="MPU-9150" x="7.366" y="6.858" smashed="yes" rot="R270">
-<attribute name="NAME" x="6.35" y="4.064" size="0.8128" layer="25"/>
+<element name="IC2" library="freetronics-original" package="QFN-24MPU" value="MPU-9150" x="7.366" y="6.858" smashed="yes" rot="R270">
+<attribute name="NAME" x="6.35" y="6.604" size="0.8128" layer="25"/>
 <attribute name="VALUE" x="4.826" y="9.398" size="0.4064" layer="27" rot="R270"/>
 </element>
 <element name="C3" library="freetronics-master-v1" package="0603" value="0.1uF" x="14.478" y="5.334" smashed="yes" rot="R270">
-<attribute name="NAME" x="14.097" y="3.81" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="14.351" y="3.302" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="13.5128" y="6.35" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C4" library="freetronics-master-v1" package="0603" value="10nF" x="5.08" y="10.922" smashed="yes" rot="R90">
-<attribute name="NAME" x="5.969" y="10.16" size="0.8128" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="3.429" y="11.684" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="6.0452" y="9.906" size="0.4064" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="C5" library="freetronics-master-v1" package="0603" value="2.2nF" x="10.414" y="5.334" smashed="yes" rot="R270">
-<attribute name="NAME" x="9.779" y="3.81" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="9.525" y="3.302" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="9.4488" y="6.35" size="0.4064" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="C6" library="freetronics-master-v1" package="0603" value="0.1uF" x="1.778" y="3.81" smashed="yes">
-<attribute name="NAME" x="1.143" y="2.794" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="1.143" y="2.54" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="0.762" y="2.8448" size="0.4064" layer="27" font="vector"/>
 </element>
-<element name="INT" library="freetronics-master-v1.1" package="1X01" value="M01PTH" x="7.112" y="11.176" smashed="yes" rot="R90">
-<attribute name="NAME" x="8.2042" y="10.3632" size="0.8128" layer="25" rot="R180"/>
-<attribute name="VALUE" x="10.287" y="9.906" size="1.27" layer="27" rot="R90"/>
+<element name="H5" library="freetronics-master-v1.1" package="1X01" value="INT" x="7.112" y="11.176" smashed="yes" rot="R90">
+<attribute name="NAME" x="6.5278" y="9.7028" size="0.8128" layer="25"/>
 </element>
 <element name="R5" library="freetronics-jon" package="0402" value="22K 0402" x="2.032" y="4.826" smashed="yes">
-<attribute name="NAME" x="2.667" y="4.572" size="0.8128" layer="25" font="vector"/>
+<attribute name="NAME" x="2.921" y="4.572" size="0.8128" layer="25" font="vector"/>
 <attribute name="VALUE" x="1.016" y="3.8608" size="0.4064" layer="27" font="vector"/>
 </element>
 <element name="SJ2" library="freetronics-master-v1.1" package="SJ" value="" x="1.778" y="6.35" smashed="yes" rot="R180">
-<attribute name="NAME" x="2.921" y="7.747" size="0.8128" layer="25" ratio="10" rot="R180"/>
+<attribute name="NAME" x="0.889" y="7.239" size="0.8128" layer="25" ratio="10"/>
 <attribute name="VALUE" x="1.3779" y="6.35" size="0.02" layer="27" rot="R180"/>
 </element>
 </elements>
@@ -667,17 +663,17 @@ design rules under a new name.</description>
 <vertex x="0" y="1.778"/>
 <vertex x="0" y="10.922" curve="-90"/>
 </polygon>
-<contactref element="GND" pad="1"/>
+<contactref element="H1" pad="1"/>
 <contactref element="IC1" pad="1"/>
 <contactref element="C1" pad="2"/>
 <contactref element="C2" pad="2"/>
-<contactref element="U$1" pad="15"/>
-<contactref element="U$1" pad="17"/>
-<contactref element="U$1" pad="18"/>
+<contactref element="IC2" pad="15"/>
+<contactref element="IC2" pad="17"/>
+<contactref element="IC2" pad="18"/>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="1"/>
-<contactref element="U$1" pad="11"/>
-<contactref element="U$1" pad="1"/>
+<contactref element="IC2" pad="11"/>
+<contactref element="IC2" pad="1"/>
 <contactref element="C4" pad="2"/>
 <contactref element="C3" pad="2"/>
 <contactref element="R5" pad="1"/>
@@ -702,7 +698,7 @@ design rules under a new name.</description>
 <contactref element="Q2" pad="2"/>
 <contactref element="R4" pad="1"/>
 <wire x1="10.95" y1="11.13" x2="10.78" y2="10.96" width="0.254" layer="1"/>
-<contactref element="U$1" pad="24"/>
+<contactref element="IC2" pad="24"/>
 <wire x1="10.95" y1="11.938" x2="10.95" y2="11.13" width="0.254" layer="1"/>
 <wire x1="9.398" y1="9.144" x2="9.144" y2="9.398" width="0.254" layer="1"/>
 <wire x1="9.144" y1="9.398" x2="9.144" y2="10.668" width="0.254" layer="1"/>
@@ -715,7 +711,7 @@ design rules under a new name.</description>
 <signal name="N$3">
 <contactref element="IC1" pad="3"/>
 <contactref element="C1" pad="1"/>
-<contactref element="VCC" pad="1"/>
+<contactref element="H4" pad="1"/>
 <contactref element="SJ1" pad="2"/>
 <via x="17.526" y="5.842" extent="1-16" drill="0.5"/>
 <wire x1="17.526" y1="5.842" x2="19.05" y2="5.842" width="0.254" layer="16"/>
@@ -731,7 +727,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SDA">
 <contactref element="Q2" pad="3"/>
-<contactref element="SDA" pad="1"/>
+<contactref element="H2" pad="1"/>
 <contactref element="R2" pad="1"/>
 <wire x1="10.95" y1="8.382" x2="10.95" y2="8.88" width="0.254" layer="1"/>
 <wire x1="10.95" y1="8.88" x2="11.43" y2="9.36" width="0.254" layer="1"/>
@@ -746,7 +742,7 @@ design rules under a new name.</description>
 </signal>
 <signal name="SCL">
 <contactref element="Q1" pad="3"/>
-<contactref element="SCL" pad="1"/>
+<contactref element="H3" pad="1"/>
 <contactref element="R1" pad="1"/>
 <wire x1="15.466" y1="8.88" x2="14.986" y2="9.36" width="0.254" layer="1"/>
 <wire x1="15.466" y1="8.382" x2="15.466" y2="8.88" width="0.254" layer="1"/>
@@ -765,9 +761,9 @@ design rules under a new name.</description>
 <contactref element="C2" pad="1"/>
 <wire x1="15.466" y1="11.938" x2="15.466" y2="11.13" width="0.254" layer="1"/>
 <wire x1="15.466" y1="11.13" x2="15.636" y2="10.96" width="0.254" layer="1"/>
-<contactref element="U$1" pad="8"/>
-<contactref element="U$1" pad="3"/>
-<contactref element="U$1" pad="13"/>
+<contactref element="IC2" pad="8"/>
+<contactref element="IC2" pad="3"/>
+<contactref element="IC2" pad="13"/>
 <contactref element="C4" pad="1"/>
 <contactref element="C3" pad="1"/>
 <contactref element="SJ2" pad="2"/>
@@ -816,7 +812,7 @@ design rules under a new name.</description>
 <contactref element="R3" pad="1"/>
 <wire x1="14.506" y1="10.96" x2="14.506" y2="11.938" width="0.254" layer="1"/>
 <wire x1="14.336" y1="10.96" x2="14.506" y2="10.96" width="0.254" layer="1"/>
-<contactref element="U$1" pad="23"/>
+<contactref element="IC2" pad="23"/>
 <via x="13.208" y="11.43" extent="1-16" drill="0.5"/>
 <wire x1="13.208" y1="11.43" x2="10.414" y2="11.43" width="0.254" layer="16"/>
 <wire x1="13.208" y1="11.43" x2="13.462" y2="11.176" width="0.254" layer="1"/>
@@ -849,12 +845,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$2">
 <contactref element="C5" pad="1"/>
-<contactref element="U$1" pad="20"/>
+<contactref element="IC2" pad="20"/>
 <wire x1="9.366" y1="6.108" x2="10.426" y2="6.108" width="0.254" layer="1"/>
 <wire x1="10.426" y1="6.108" x2="10.414" y2="6.096" width="0.254" layer="1"/>
 </signal>
 <signal name="N$7">
-<contactref element="U$1" pad="10"/>
+<contactref element="IC2" pad="10"/>
 <contactref element="C6" pad="2"/>
 <wire x1="2.54" y1="3.81" x2="3.302" y2="3.81" width="0.254" layer="1"/>
 <wire x1="3.302" y1="3.81" x2="3.81" y2="4.318" width="0.254" layer="1"/>
@@ -863,8 +859,8 @@ design rules under a new name.</description>
 <wire x1="4.068" y1="6.608" x2="3.81" y2="6.35" width="0.254" layer="1"/>
 </signal>
 <signal name="N$14">
-<contactref element="INT" pad="1"/>
-<contactref element="U$1" pad="12"/>
+<contactref element="H5" pad="1"/>
+<contactref element="IC2" pad="12"/>
 <wire x1="5.366" y1="5.608" x2="5.366" y2="4.35" width="0.254" layer="1"/>
 <wire x1="5.366" y1="4.35" x2="3.556" y2="2.54" width="0.254" layer="1"/>
 <wire x1="3.556" y1="2.54" x2="2.794" y2="2.54" width="0.254" layer="1"/>
@@ -881,7 +877,7 @@ design rules under a new name.</description>
 <wire x1="5.334" y1="11.176" x2="7.112" y2="11.176" width="0.254" layer="16"/>
 </signal>
 <signal name="N$8">
-<contactref element="U$1" pad="9"/>
+<contactref element="IC2" pad="9"/>
 <contactref element="R5" pad="2"/>
 <contactref element="SJ2" pad="1"/>
 <wire x1="2.512" y1="4.826" x2="2.512" y2="6.068" width="0.254" layer="1"/>
