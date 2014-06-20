@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1319,7 +1319,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <sheet>
 <plain>
 <text x="149.86" y="12.7" size="2.54" layer="94">Freetronics IMU9 9-DOF Sensor</text>
-<text x="215.9" y="6.858" size="1.778" layer="94">V1.0 (2014-01-21)</text>
+<text x="215.9" y="6.858" size="1.778" layer="94">V1.1 (2014-06-20)</text>
 <text x="149.606" y="6.858" size="1.651" layer="94">www.freetronics.com/imu9</text>
 <text x="193.04" y="6.858" size="1.778" layer="94">SKU: IMU9</text>
 <text x="119.38" y="139.7" size="1.778" layer="97">Supply Voltage Range: 2.4-3.64V</text>
@@ -1327,11 +1327,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH 1/10th watt (sma
 <frame x1="147.32" y1="5.08" x2="243.84" y2="17.78" columns="0" rows="0" layer="94" border-left="no" border-top="no" border-right="no" border-bottom="no"/>
 <frame x1="190.5" y1="5.08" x2="213.36" y2="10.16" columns="8" rows="5" layer="94"/>
 <frame x1="213.36" y1="5.08" x2="243.84" y2="10.16" columns="8" rows="5" layer="94"/>
-<text x="25.4" y="88.9" size="1.778" layer="97">Bridge across solder jumpers
-SJ1 to enable I2C pull-ups</text>
+<text x="48.26" y="86.36" size="1.778" layer="97">Cut solder jumpers SJ1
+to disable I2C pull-ups</text>
 <text x="76.2" y="93.218" size="1.778" layer="97">Vdrop 0.18V typ, 0.35V max</text>
 <text x="205.74" y="137.16" size="1.778" layer="97">Jumper SJ2: Address LSB</text>
-<text x="149.86" y="20.32" size="1.778" layer="94">Copyright 2014 Freetronics Pty Ltd
+<text x="7.62" y="7.62" size="1.778" layer="94">Copyright 2014 Freetronics Pty Ltd
 Designed by Adelmo Eloy
 Released under the TAPR Open Hardware License
 www.tapr.org/OHL</text>
@@ -1339,10 +1339,11 @@ www.tapr.org/OHL</text>
 * 3-axis gyroscope
 * 3-axis accelerometer
 * 3-axis compass</text>
-<text x="12.7" y="7.62" size="1.778" layer="94">Module operating voltage: 2.75 - 6Vdc (&lt;0.35V loss in LDO, 2.4V min for MPU-9150)
+<text x="73.66" y="162.56" size="1.778" layer="94">Module operating voltage: 2.75 - 6Vdc (&lt;0.35V loss in LDO, 2.4V min for MPU-9150)
 I2C address: 0x68 (AD0 jumper open) / 0x69 (AD0 jumper closed)
 I2C pull-ups disabled by default. Bridge solder jumpers to enable.
 5V-safe I2C buffers.</text>
+<wire x1="43.18" y1="83.82" x2="48.26" y2="83.82" width="0.4064" layer="94"/>
 </plain>
 <instances>
 <instance part="H4" gate="G$1" x="25.4" y="111.76" smashed="yes">
@@ -1657,8 +1658,8 @@ I2C pull-ups disabled by default. Bridge solder jumpers to enable.
 </sheet>
 </sheets>
 <errors>
-<approved hash="115,1,46.0486,87.1432,SJ1,,,,,"/>
-<approved hash="115,1,211.844,127,SJ2,,,,,"/>
+<approved hash="113,1,46.0486,87.1432,SJ1,,,,,"/>
+<approved hash="113,1,211.844,127,SJ2,,,,,"/>
 </errors>
 </schematic>
 </drawing>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.3">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -131,7 +131,7 @@
 <wire x1="5.969" y1="4.572" x2="14.224" y2="4.572" width="0.254" layer="22"/>
 <wire x1="14.224" y1="4.572" x2="15.24" y2="5.588" width="0.254" layer="22" curve="90.022562"/>
 <wire x1="15.24" y1="5.588" x2="14.351" y2="6.604" width="0.254" layer="22" curve="89.988722"/>
-<text x="16.129" y="7.62" size="0.8636" layer="22" font="vector" ratio="16" rot="MR0">freetronics.com/imu9</text>
+<text x="16.129" y="7.112" size="1.27" layer="22" font="vector" ratio="16" rot="MR0">tron.cc/imu9</text>
 <text x="2.794" y="0.762" size="0.8636" layer="22" font="vector" ratio="18" rot="MR90">SKU: IMU9</text>
 <text x="14.605" y="5.207" size="1.016" layer="22" font="vector" ratio="15" rot="MR0">freetronics</text>
 <hole x="17.78" y="10.287" drill="3.175"/>
@@ -186,7 +186,7 @@ ACCELEROMETER</text>
 <text x="20.066" y="2.286" size="0.9144" layer="22" ratio="15" rot="MR0">2.75-6V</text>
 <text x="15.2908" y="2.286" size="1.524" layer="21" font="vector" ratio="15">IMU9</text>
 <circle x="9.525" y="9.017" radius="0.254" width="0.254" layer="21"/>
-<text x="16.002" y="1.778" size="1.016" layer="22" ratio="15" rot="MR180">v1.0</text>
+<text x="16.002" y="1.778" size="1.016" layer="22" ratio="15" rot="MR180">v1.1</text>
 <text x="0.762" y="7.5946" size="0.8128" layer="21" ratio="15">AD0</text>
 <text x="8.636" y="12.3952" size="0.8128" layer="21" font="vector" ratio="15" rot="R270">INT</text>
 <wire x1="7.747" y1="9.906" x2="6.477" y2="9.906" width="0.2032" layer="22"/>
@@ -893,7 +893,87 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$12">
 </signal>
+<signal name="N$13">
+<wire x1="19.05" y1="6.858" x2="19.05" y2="6.35" width="0.2032" layer="16"/>
+</signal>
+<signal name="N$15">
+<wire x1="19.05" y1="5.334" x2="19.05" y2="4.826" width="0.2032" layer="16"/>
+</signal>
 </signals>
+<errors>
+<approved hash="7,39,29f50a0fb29ba161"/>
+<approved hash="7,39,2df50a0fb290a56a"/>
+<approved hash="7,39,2dfe0e04b690a56a"/>
+<approved hash="18,30,874af55f7cf956a1"/>
+<approved hash="5,1,5cc0497558f469bf"/>
+<approved hash="5,1,a2667f37a56523e2"/>
+<approved hash="5,1,3f8ddadca11140fe"/>
+<approved hash="5,1,42be26b55d243679"/>
+<approved hash="5,1,1cc30b1edb13ed30"/>
+<approved hash="5,1,65693da5e7092192"/>
+<approved hash="5,1,42d826d35d043659"/>
+<approved hash="5,1,3883ddd2a609401e"/>
+<approved hash="5,1,9bd59a99c8f7935f"/>
+<approved hash="5,1,949f7524bf691f05"/>
+<approved hash="5,1,423a26315d243679"/>
+<approved hash="5,1,3841dd10a6c940fe"/>
+<approved hash="5,1,8592462c4ea0d7e6"/>
+<approved hash="5,1,c45977ddf8b2b7f6"/>
+<approved hash="5,1,431827135cc43799"/>
+<approved hash="5,1,3843dd12a6c940de"/>
+<approved hash="5,1,860d462b8e751c85"/>
+<approved hash="5,1,9264dc2e368e2833"/>
+<approved hash="5,1,97f5db0c31aa2da4"/>
+<approved hash="5,1,b500e107cb2e7d94"/>
+<approved hash="5,1,90afdb3431562a3a"/>
+<approved hash="5,1,a882da2a308a12d5"/>
+<approved hash="5,1,75994ac4671cb114"/>
+<approved hash="5,1,743f4b6266fcb0f4"/>
+<approved hash="5,1,aa13dbcc316e1046"/>
+<approved hash="5,1,56a297a39158d65a"/>
+<approved hash="5,1,b2cee6c9cb0e7a4c"/>
+<approved hash="5,1,667f9a89c8e454d9"/>
+<approved hash="5,1,890a6c056a097c76"/>
+<approved hash="5,1,bf926f156b1942ee"/>
+<approved hash="5,1,03c4026c7a4fd23f"/>
+<approved hash="5,1,24adf41443186ad1"/>
+<approved hash="5,1,1235f70442085449"/>
+<approved hash="5,1,1d917acef541c3cb"/>
+<approved hash="5,1,c247f80c787e1c9e"/>
+<approved hash="5,1,95af45149f18b6d3"/>
+<approved hash="5,1,0940126b9279d6a9"/>
+<approved hash="5,1,ad23fad8a7b68f27"/>
+<approved hash="5,1,278b838511f87281"/>
+<approved hash="5,1,a33746049e08884b"/>
+<approved hash="5,1,c3c5fa6c7a4e123e"/>
+<approved hash="5,1,1f737bc2fb63c175"/>
+<approved hash="5,1,0aaada145f1876d6"/>
+<approved hash="5,1,3c32d9045e08484e"/>
+<approved hash="5,1,dd917acef54103cb"/>
+<approved hash="5,1,0247f80c787edc9e"/>
+<approved hash="5,1,171352c2d353c975"/>
+<approved hash="5,1,4e0944d3873abde3"/>
+<approved hash="5,1,6a465bfdb5904646"/>
+<approved hash="5,1,fba42b148318aad8"/>
+<approved hash="5,1,cd47ca6c527e12ae"/>
+<approved hash="5,1,3893632401562a06"/>
+<approved hash="5,1,14277b6626fba0ec"/>
+<approved hash="5,1,7d96aa3fe5e34d08"/>
+<approved hash="5,1,022f63dc016e107a"/>
+<approved hash="5,1,00be623a008a12e9"/>
+<approved hash="5,1,a2caa6d1fb161a4b"/>
+<approved hash="5,1,3fc9631c01aa2d98"/>
+<approved hash="5,1,15817ac0271ba10c"/>
+<approved hash="5,1,3a58643e068e280f"/>
+<approved hash="5,1,a504a11ffb361d93"/>
+<approved hash="5,1,1174d11facdc4c13"/>
+<approved hash="5,1,d69c319d3756d654"/>
+<approved hash="5,1,04f002cb7663fea2"/>
+<approved hash="19,16,747dfed221db218f"/>
+<approved hash="19,16,1ab5d59a8011c5c5"/>
+<approved hash="19,16,4faefc7221451862"/>
+<approved hash="19,16,1166d9388e1dccb8"/>
+</errors>
 </board>
 </drawing>
 <compatibility>
